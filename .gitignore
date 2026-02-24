@@ -1,0 +1,71 @@
+# =========================
+# Work-tracker (.gitignore)
+# Estructura esperada:
+# /backend
+# /frontend
+# =========================
+
+# --- SO / Editor ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+.vscode/
+.idea/
+*.swp
+
+# --- Python general ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Entornos virtuales ---
+venv/
+.venv/
+env/
+ENV/
+backend/venv/
+backend/.venv/
+
+# --- FastAPI / Uvicorn logs ---
+*.log
+
+# --- Base de datos SQLite (NO subir) ---
+*.db
+*.sqlite
+*.sqlite3
+backend/data/
+# Si quieres conservar la carpeta pero no el contenido:
+# backend/data/*
+# !backend/data/.gitkeep
+
+# --- Uploads (NO subir archivos procesados/subidos) ---
+backend/uploads/
+# Si quieres conservar la carpeta pero no el contenido:
+# backend/uploads/*
+# !backend/uploads/.gitkeep
+
+# --- Frontend (si es estático, normalmente SÍ se versiona) ---
+# Si usas build (Vite/React/etc.), descomenta lo siguiente:
+# frontend/node_modules/
+# frontend/dist/
+# frontend/build/
+# npm/yarn/pnpm
+# frontend/package-lock.json
+# frontend/yarn.lock
+# frontend/pnpm-lock.yaml
+
+# --- Archivos temporales ---
+*.tmp
+*.temp
+*.bak
