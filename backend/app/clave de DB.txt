@@ -1,0 +1,6 @@
+L1m4vk_38_AMzk
+
+
+cd backend
+$env:DATABASE_URL="postgresql://postgres.fgbkyxhprsdysnszojlo:L1m4vk_38_AMzk@aws-1-us-east-2.pooler.supabase.com:5432/postgres"
+alembic upgrade head
